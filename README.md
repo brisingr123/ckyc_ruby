@@ -22,7 +22,14 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby 
+foo = CkycRuby::Ckyc.new(url: url , private_key: path_to_private_key, public_ckyc_key: path_to_public_key, fi_code: fi_code)
+
+foo.check_kyc(pan: pan, dob: dob)
+foo.download(auth_factor_type: "01",auth_factor: dob, ckyc_no:ckyc_no)
+```
+
+returns json with keys status. if status  == error , then there is an error reason . Otherwise, parsed error would be returned. 
 
 ## Development
 

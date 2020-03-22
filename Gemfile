@@ -5,4 +5,5 @@ source "https://rubygems.org"
 gem 'rest-client'
 gem 'json'
 gem 'nokogiri'
+gem 'activesupport'
 gemspec
